@@ -32,6 +32,7 @@ function view(req,res){
   res.send('The JSON file has the following content: ' + JSON.stringify(words, null, 2));
 }
 
+//in case there is an error, show the guide message
 app.get('/*',hi);
 function hi(req,res){
   res.send('Hello you can add components JSON file with routing /add/obj/5 and view the file with the routing /view');
